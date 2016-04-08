@@ -5,7 +5,6 @@ var serverUrl = "http://52.5.156.91:8080/user";
 
 var url="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa6d450bf9726ed3b&redirect_uri=http%3A%2F%2Fnydev1.menusifu.com%2Fuser&response_type=code&scope=snsapi_userinfo&state=123456#wechat_direct";
 
-
 function getUrlParam(name)
 { 
   var r = window.location.search.substr(1);
