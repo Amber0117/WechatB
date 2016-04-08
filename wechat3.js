@@ -10,7 +10,6 @@ $("#indexbutton1").bind('touchend', function(e){
   $( this ).css('background','#ffffe6');
 });
 
-
 FontSize();
 
 $("#loadingpage").show();
