@@ -1,5 +1,4 @@
 #all{
-
 }
 
 body{
@@ -16,7 +15,6 @@ body{
 
 	height:100%;
 	width:100%;
-	
   position:absolute;
 }
 
@@ -92,7 +90,6 @@ border:0;
         -khtml-user-select: none;
         -webkit-user-select: none;
         -o-user-select: none;
-
 }
 
 #scanQR

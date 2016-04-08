@@ -49,42 +49,24 @@ function fetchUserInfo(code,id,NextGo,ErrorGo){
 function storeID(id){
     localStorage.setItem('UserID', id);
 	  data.id=id;
-	//alert(localStorage.getItem('UserID'));
 }
 
 function storeLang(lang){
     localStorage.setItem('UserLang', lang);
     data.lang=lang;
-    //alert(data.lang);
-    //alert("2");
 }
 
 function iniLan(info){
     if(data.lang=="chinese")
        {lansetting(chinese);
-        //alert("chin");
        }
     else
        {lansetting(english);
-
-       //alert("eng");
      }
-
-
-
 }
 
-
-
-
 function updateUserInfo(code,id,data,NextGo,ErrorGo){
-  //alert("1243");
-  //if(!code&&!id)return;
   var myurl = serverUrl + '/'+id;
-  
-  //alert(data.lang);
-  //var myurl = 'http://nydev1.menusifu.com/user/'+id;
-  //alert(myurl);
   $.ajax({
          type: 'PUT',
          url: myurl,
