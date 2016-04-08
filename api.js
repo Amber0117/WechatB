@@ -5,7 +5,6 @@ var serverUrl = "http://52.5.156.91:8080/user";
 
 var url="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa6d450bf9726ed3b&redirect_uri=http%3A%2F%2Fnydev1.menusifu.com%2Fuser&response_type=code&scope=snsapi_userinfo&state=123456#wechat_direct";
 
-
 function getUrlParam(name)
 { 
   var r = window.location.search.substr(1);
@@ -69,22 +68,11 @@ function iniLan(info){
 
        //alert("eng");
      }
-
-
-
 }
 
-
-
-
 function updateUserInfo(code,id,data,NextGo,ErrorGo){
-  //alert("1243");
-  //if(!code&&!id)return;
   var myurl = serverUrl + '/'+id;
-  
-  //alert(data.lang);
-  //var myurl = 'http://nydev1.menusifu.com/user/'+id;
-  //alert(myurl);
+
   $.ajax({
          type: 'PUT',
          url: myurl,
@@ -145,8 +133,6 @@ var data={
              "zipcode":undefined 
         }
 }
-
-
 
 
  //var id='56fd38e815f8f386a2569120';
